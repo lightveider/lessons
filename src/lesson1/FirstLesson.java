@@ -5,7 +5,7 @@ package lesson1;
 многотрочный
 комментарий
  */
-
+//test for git
 public class FirstLesson {
     //точка входа psvm
     public static void main(String[] args) {
