@@ -136,7 +136,7 @@ public class Strings {
         names = String.join("!", namesArr); // передаём разделитель и массив
         // names = String.join("! ", "строка", "строка")
         System.out.println(names);
-        
+
 
     }
 }
