@@ -35,8 +35,10 @@ public class Application {
         System.out.println(climber1);
         System.out.println(climber2);
 
-        Mountain everest  = new Mountain();
-        Mountain elbrus = new Mountain();
+        Mountain everest  = new Mountain("Эверест",8000);
+        Mountain elbrus = new Mountain("Эльбрус",6000);
+
+        Mountain defaultMountain = new Mountain();
 
         System.out.println(everest);
         System.out.println(elbrus);
