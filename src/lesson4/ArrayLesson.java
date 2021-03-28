@@ -1,6 +1,5 @@
-package lesson3;
+package lesson4;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class ArrayLesson {
