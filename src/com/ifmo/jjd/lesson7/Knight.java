@@ -11,4 +11,9 @@ public class Knight extends BattleUnit {
     public void rest() {
         plusHeath(2);
     }
+
+    @Override
+    public void attack(Unit unit) {
+        unit.minusHealth(getAttackScore());
+    }
 }

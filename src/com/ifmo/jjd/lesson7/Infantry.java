@@ -13,4 +13,10 @@ public class Infantry extends BattleUnit {
     public void rest() {
         plusHeath(1);
     }
+
+    @Override
+    public void attack(Unit unit) {
+        unit.minusHealth(getAttackScore());
+        if (!unit.isAlive()) plusHeath(additionalHealth);
+    }
 }

@@ -11,6 +11,8 @@ public class Application {
         BattleUnit bUnit1 = new Knight(8, 3);
         BattleUnit bUnit2 = new Infantry(10, 7);
 
+        //Knight bKnight = (Knight) bUnit1; - приведение данных
+
         Unit unit = new King(34);
 
         Scanner scanner = new Scanner(System.in);
@@ -24,6 +26,8 @@ public class Application {
         } else {
             battleUnit = new Infantry(10, 7);
         }
+
+        battleUnit.attack(infantry);
 
         System.out.println(battleUnit.getAttackScore());
 
