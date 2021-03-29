@@ -1,8 +1,5 @@
-package lesson4;
+package lesson5;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Strings {
