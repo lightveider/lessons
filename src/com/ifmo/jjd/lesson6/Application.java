@@ -1,7 +1,5 @@
 package com.ifmo.jjd.lesson6;
 
-import java.util.UUID;
-
 public class Application {
     public static void main(String[] args) {
         Climber climber1 = new Climber(); // вызов конструктора
