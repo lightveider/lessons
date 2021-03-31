@@ -13,7 +13,7 @@ public class Application {
 
         //Knight bKnight = (Knight) bUnit1; - приведение данных
 
-        Unit unit = new King(34);
+        Unit unit = new King();
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите тип юнита");

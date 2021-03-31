@@ -1,8 +1,8 @@
 package com.ifmo.jjd.lesson7;
 
-abstract public class Unit implements RestAble{
+abstract public class Unit implements RestAble {
     protected int healthScore;
-    protected int maxHealthScore;
+    protected final int maxHealthScore;
 
 
     public Unit(int healthScore) {
