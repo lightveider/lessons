@@ -1,12 +1,12 @@
 package com.ifmo.jjd.lesson6;
 
-public class Mountain {
+public class Mountain implements Cloneable {
     private String name;
     private int height;
 
-    public Mountain(){
+    public Mountain() {
         // вызов конструктора
-        this("Гора по умолчанию",300);
+        this("Гора по умолчанию", 300);
     }
     // конструктор
 
@@ -43,5 +43,14 @@ public class Mountain {
                 "name='" + name + '\'' +
                 ", height=" + height +
                 '}';
+    }
+
+    @Override
+    public Mountain clone() {
+        try {
+            return (Mountain) super.clone();
+        } catch (CloneNotSupportedException e) {
+            return null;
+        }
     }
 }

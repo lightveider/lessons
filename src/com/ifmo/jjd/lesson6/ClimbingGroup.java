@@ -34,4 +34,27 @@ public class ClimbingGroup {
         }
         System.out.println("Мест нет");
     }
+
+    @Override
+    public ClimbingGroup clone() {
+        Mountain copyM = this.mountain.clone();
+        ClimbingGroup copyGr = new ClimbingGroup(copyM, climbers.length);
+        copyGr.climbers = climbers.clone();
+        return  copyGr;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ClimbingGroup)) return false;
+        ClimbingGroup that = (ClimbingGroup) o;
+        return Objects.equals(mountain, that.mountain) && Arrays.equals(climbers, that.climbers);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(mountain);
+        result = 31 * result + Arrays.hashCode(climbers);
+        return result;
+    }
 }
