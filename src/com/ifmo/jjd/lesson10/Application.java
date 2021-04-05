@@ -51,5 +51,13 @@ public class Application {
         System.out.println(Operation.MULTI.action(5, 5));
 
 
+        //создать enum который перечисляет планеты солнечной системы
+        //должна быть реализованна возможность узнать массу и радиус каждой планеты
+        //значения вывести в цикле
+
+        for (Planet elem : Planet.values()){
+            System.out.println(elem.name() + " Mass " + elem.getMass() + " Radius " + elem.getRadius());
+        }
+
     }
 }
